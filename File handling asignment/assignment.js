@@ -4,7 +4,8 @@ const PORT=5544;
 const server=http.createServer((req,res)=>{
     if(req.url=="/"){
         res.writeHead(200,{'Content-Type':'text/html'})
-        res.write('<html><body><h2> assignment created </h2></body> </html>');
+        // res.write('<html><body><h2> assignment created </h2></body> </html>');
+        res.write("<html><head><link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'></head><body class='text-center'><h1 class='my-5'>Server Is Created!</h1><a href='createfile' class='btn btn-success'  role='button'> Create File </a> &nbsp<a href='readdata' class='btn btn-primary' role='button'> Read File</a> <a href='append' class='btn btn-warning'  role='button'>Update File</a>          <a href='deletefile' class='btn btn-danger'  role='button' >Delete File</a><script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'></script></body></html>")
         res.end()
     }
     else if(req.url=="/createfile"){
