@@ -1,0 +1,63 @@
+extends layout.pug 
+block title 
+ title about Page
+block content
+    // Contact Us
+    section.container.bg-light
+      // Section heading
+      h2.h1-responsive.font-weight-bold.text-center.my-4(id='contact us')  Contact our team 
+      // Section description
+      p.text-center.w-responsive.mx-auto.mb-5
+        b
+          | Feel free to contact us .
+      .row
+        // Grid column
+        .col-md-9.mb-md-0.mb-5
+          form#contact-form(method='post', action='/postdata')
+            // Grid row
+            .row
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  label(for='name')  Your Full Name 
+                  input#name.form-control(type='text', name='name')
+              // Grid column
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  label(for='email') Your Email
+                  input#email.form-control(type='text', name='email')
+              // Grid column
+            // Grid row
+            // Grid row
+            .row
+              .col-md-12
+                .md-form.mb-0
+                  label(for='subject') Subject
+                  input#subject.form-control(type='text', name='subject')
+            // Grid row
+            // Grid row
+            .row
+              // Grid column
+              .col-md-12
+                .md-form
+                  label(for='message') Your Message
+                  textarea#message.form-control.md-textarea(type='text', name='message', rows='2')
+            // Grid row
+            .text-center.text-md-left
+              input(type="submit" value="submit" class="registerbtn")
+          .status
+        // Grid column
+        // Grid column
+        .col-md-3.text-center
+          ul.list-unstyled.mb-0
+            li
+              i.fa(style='font-size:24px') &#xF041;
+              p  IT 9, Hinjewadi,Pune
+            li
+              i.fa(style='font-size:24px') &#xF095;
+              p + 01 234 567 89
+            li
+              i.fa(style='font-size:24px') &#xF0E0;
+              p contact@neosoft.com
+        // Grid column

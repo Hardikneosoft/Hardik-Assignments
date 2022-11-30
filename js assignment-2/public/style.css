@@ -1,0 +1,50 @@
+.bgimage{
+  background: url(./photos/bgimage.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 200px;
+}
+.headerset{
+  /* padding-top: 250px; */
+  box-sizing: border-box;
+}
+.headerset h1{
+  font-size: 25px;
+  font-weight: bold;
+}
+.headerset h2{
+  font-size: 40px;
+}
+.ourservices{
+  padding: 0px 0px;
+  margin-top: 0;
+}
+.team{
+  padding: 100px 60px;
+}
+.about{
+  background-color: black;
+}
+.about_us{
+  padding: 100px 40px;
+}
+.value{
+  height: 500px;
+  padding: 100px 60px;
+}
+.value h1{
+  font-family:sans-serif Arial, Helvetica, sans-serif ;
+}
+.value2{
+  padding: 60px 40px;
+}
+.value2 h1{
+  color: red;
+}
+.value2 .col-sm-2{
+  padding: 100px ;
+  padding-right: 240px;
+  margin-bottom: 20% ;
+  height: 250px;
+}
