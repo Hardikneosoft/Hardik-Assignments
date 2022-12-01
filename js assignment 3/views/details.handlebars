@@ -1,0 +1,27 @@
+{{> nav}}
+<h1 class="text-center mt-3" style="color:rgb(19, 20, 20)">Details</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Age</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+            <th scope="col">Role</th>
+        </tr>
+    </thead>
+    {{#each info}}
+    <tbody>
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.role}}</td>
+        </tr>
+    </tbody>
+    {{/each}}
+</table>
+{{> footer}}
